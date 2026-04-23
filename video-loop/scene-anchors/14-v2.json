@@ -1,0 +1,12 @@
+{
+  "episode": "14",
+  "preset": "v2",
+  "desc": "14 智能量化 — 5 Act 谜题切片",
+  "scenes": [
+    { "id": "act1_puzzle", "start_anchor": null,       "note": "谜面：智能是什么" },
+    { "id": "act2_common", "start_anchor": "能答题就",  "note": "常识错在哪：中文房间" },
+    { "id": "act3_tool",   "start_anchor": "把系",      "note": "新工具：智能密度公式" },
+    { "id": "act4_reveal", "start_anchor": "无限对话",  "note": "谜底：中文房间瓦解" },
+    { "id": "act5_coda",   "start_anchor": "一万条",    "note": "余韵：笔记 vs 原则" }
+  ]
+}

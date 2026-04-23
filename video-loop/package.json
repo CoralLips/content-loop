@@ -1,0 +1,29 @@
+{
+  "name": "video-loop",
+  "version": "0.0.1",
+  "description": "Remotion video pipeline for content-loop articles",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.448"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@remotion/bundler": "^4.0.448",
+    "@remotion/cli": "^4.0.448",
+    "@remotion/install-whisper-cpp": "^4.0.448",
+    "@remotion/renderer": "^4.0.448",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "msedge-tts": "^2.0.5",
+    "music-metadata": "^11.12.3",
+    "opencc-js": "^1.0.5",
+    "typescript": "^6.0.3",
+    "undici": "^7.25.0"
+  }
+}

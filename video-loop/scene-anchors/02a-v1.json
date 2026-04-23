@@ -1,0 +1,15 @@
+{
+  "episode": "02a",
+  "preset": "v1",
+  "desc": "导览式 7min 版 — 8 scene",
+  "scenes": [
+    { "id": "scene1_hook",      "start_anchor": null },
+    { "id": "scene2_shannon",   "start_anchor": "建立信" },
+    { "id": "scene3_syllogism", "start_anchor": "三条事实" },
+    { "id": "scene4_closure",   "start_anchor": "看字" },
+    { "id": "scene5_core",      "start_anchor": "有新" },
+    { "id": "scene6_theorem",   "start_anchor": "成本等于" },
+    { "id": "scene7_agents",    "start_anchor": "AI通信" },
+    { "id": "scene8_closing",   "start_anchor": "对的这让" }
+  ]
+}

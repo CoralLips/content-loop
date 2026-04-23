@@ -1,0 +1,46 @@
+# ─── Secrets ───
+.env
+.env.*
+!.env.example
+
+# ─── Node / build ───
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ─── Video-loop build artifacts ───
+# TTS / Whisper 产物（从 script/*.md 生成，不进 repo）
+video-loop/public/*.mp3
+video-loop/public/*.wav
+video-loop/public/*.timing.json
+video-loop/public/*.whisper.json
+video-loop/public/*-scenes.json
+
+# Remotion 渲染产物
+video-loop/out/
+*.mp4
+
+# whisper.cpp 编译产物 + 模型（通过 setup-whisper.mjs 重建）
+video-loop/whisper.cpp/
+
+# ─── Local tool state ───
+.omc/
+session-handoff/
+.claude/settings.local.json
+
+# ─── Temp / backup ───
+*.tmp
+*.bak
+*.swp
+*~
+
+# ─── OS ───
+.DS_Store
+Thumbs.db
+
+# ─── IDE ───
+.vscode/
+.idea/
+*.code-workspace

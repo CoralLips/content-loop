@@ -1,0 +1,12 @@
+{
+  "episode": "02a",
+  "preset": "v2",
+  "desc": "谜题切片 3min 版 — 5 Act",
+  "scenes": [
+    { "id": "act1_puzzle",  "start_anchor": null },
+    { "id": "act2_shannon", "start_anchor": "要理解" },
+    { "id": "act3_tool",    "start_anchor": "本月这篇" },
+    { "id": "act4_reveal",  "start_anchor": "到这里" },
+    { "id": "act5_coda",    "start_anchor": "回头看" }
+  ]
+}

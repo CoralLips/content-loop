@@ -1,0 +1,20 @@
+node_modules/
+out/
+public/*.mp3
+public/*.json
+public/*.srt
+.env
+.env.local
+whisper-cpp/
+*.log
+.DS_Store
+
+# TTS pipeline 中转产物（pipeline.mjs 每次跑时重建）
+script/*-tagged.md
+script/*.bak
+
+# extract-narration / source-materials 默认写 $TEMP；
+# 万一用 -o 落到项目下，也 ignore 防进 git
+shots/*-draft.json
+shots/*-draft.md
+source/

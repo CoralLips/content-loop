@@ -1,0 +1,15 @@
+{
+  "episode": "14",
+  "preset": "v1",
+  "desc": "14 智能量化定义 — 8 scene 导览",
+  "scenes": [
+    { "id": "scene1_hook",          "start_anchor": null,       "note": "引子：什么是智能" },
+    { "id": "scene2_formula",       "start_anchor": "这个月",    "note": "智能密度公式登场" },
+    { "id": "scene3_independent",   "start_anchor": "我们从最",  "note": "独立输出的定义" },
+    { "id": "scene4_trend",         "start_anchor": "接下来是",  "note": "趋势视角：查表 vs 算法" },
+    { "id": "scene5_multiplication","start_anchor": "跟着算",    "note": "乘法例子" },
+    { "id": "scene6_chinese_room",  "start_anchor": "1980年",    "note": "中文房间当场瓦解" },
+    { "id": "scene7_computation",   "start_anchor": "另一个40年","note": "泛计算论被独立性挡住" },
+    { "id": "scene8_self",          "start_anchor": "最后我们",  "note": "余韵：一万条笔记 vs 十条原则" }
+  ]
+}

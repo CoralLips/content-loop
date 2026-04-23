@@ -1,6 +1,9 @@
 {
-  "last_run": null,
+  "last_run": "2026-04-18T10:15:00Z",
+  "scan_offset": 1600,
   "read_ids": [],
-  "total_runs": 0,
-  "total_generated": 0
+  "total_runs": 40,
+  "total_generated": 96,
+  "today_seq": 74,
+  "today_batch": "batch-061-080"
 }

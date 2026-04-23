@@ -1,0 +1,90 @@
+{
+  "tts": {
+    "provider": "fish",
+    "voice_id": "3ba198f728c64871bc93340f02a5b2d2",
+    "voice_alias": "男鸡蛋主持人",
+    "model": "s2-pro",
+    "speed": 0.9,
+    "format": "mp3"
+  },
+
+  "tagging": {
+    "note": "自动规则只处理结构性 tag（停顿/段落）；情绪类 [emphasis]/[excited] 需人工补。",
+    "auto_rules": [
+      {
+        "name": "question_pause",
+        "pattern": "([?？])",
+        "replace_with": "$1[short pause]",
+        "desc": "问号后补 short pause"
+      },
+      {
+        "name": "emdash_pause",
+        "pattern": "——",
+        "replace_with": "——[short pause]",
+        "desc": "破折号后补 short pause"
+      },
+      {
+        "name": "paragraph_pause",
+        "pattern": "^(?=[^\\s])",
+        "multiline_sep": "\\n\\n",
+        "insert_between_paragraphs": "[long pause]",
+        "desc": "段落之间补 long pause（每两个段落间一次）"
+      }
+    ],
+    "max_density_chars_per_tag": 20,
+    "desc_skipped_tags": "自动化不插 [emphasis] / [excited] / [sigh] / [soft voice] 等需语义判断的 tag，由人工在 -tagged.md 上补"
+  },
+
+  "verification": {
+    "narration": {
+      "unwhitelisted_terms": [
+        "不可约核",
+        "推理闭包",
+        "闭包保真度",
+        "语义瓶颈",
+        "语义杠杆",
+        "率失真",
+        "信道容量",
+        "智能密度",
+        "独立输出",
+        "描述长度",
+        "泛计算论"
+      ],
+      "term_context_window": 50,
+      "definition_markers": ["叫做", "叫", "就是", "翻译过来", "翻译一下", "意思是", "也就是", "换句话说", "简单说", "它说的", "其实就是", "等于", "里叫", "——"],
+      "connectors": ["所以", "但是", "因为", "为什么", "也就是说", "换句话说", "问题是", "这意味着", "其实", "也就是", "然而", "于是", "而且", "不过", "那么", "接下来", "然后", "首先", "最后", "说到这里", "因此", "比如", "总之", "这样", "至于", "一方面", "另一方面", "听起来", "结果是", "这就是"],
+      "visual_symbols_forbidden": ["——", "／", "→", "「", "」", "《", "》"],
+      "presets": {
+        "v1": {
+          "desc": "导览式 7min 主 pipeline",
+          "max_avg_sentence_chars": 40,
+          "max_single_sentence_chars": 80,
+          "min_connector_per_n_sentences": 6,
+          "max_paragraph_chars": 150
+        },
+        "v2": {
+          "desc": "谜题切片 3min 实验 pipeline",
+          "max_avg_sentence_chars": 20,
+          "max_single_sentence_chars": 30,
+          "min_connector_per_n_sentences": 8,
+          "max_paragraph_chars": 120,
+          "annotation_tolerated_terms": true
+        }
+      },
+      "pronoun_watch": ["它", "这个", "那个", "这些", "那些"],
+      "max_consecutive_abstract_chars": 150,
+      "desc": "--preset v1|v2 选择规则集。未传 --preset 默认 v1（向后兼容）。"
+    },
+    "tts": {
+      "chars_per_second_min": 3.5,
+      "chars_per_second_max": 6.0,
+      "min_bitrate_kbps": 80,
+      "drop_ratio_ok": 0.03,
+      "drop_ratio_warn": 0.10,
+      "drop_ratio_fail": 0.20,
+      "max_text_drop_ratio": 0.03,
+      "whisper_model": "small",
+      "desc": "chars_per_second 对比文本字数和音频时长；drop_ratio 分三档：≤3% OK，≤10% warn，≤20% 强警告必修，>20% FAIL。max_text_drop_ratio 保留向后兼容。"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "last_eval": "2026-04-21T15:45:00Z",
+  "total_evals": 1,
+  "last_batch": {
+    "reviewed": 3,
+    "must_publish": 3,
+    "priority": 0,
+    "backup": 0,
+    "rejected": 0,
+    "duplicate": 0,
+    "drafts_written": 0,
+    "note": "demo 批 (2026-04-10)，分数已出，终稿待人工触发"
+  }
+}
